@@ -2,6 +2,11 @@ import { motion } from 'framer-motion'
 import './navbar.scss'
 import Sidebar from '../sidebar/SideBar'
 
+import github from "../../../public/github.png"
+import linkedin from "../../../public/linkedIn.png"
+import hackerrank from "../../../public/hackerrank.png"
+import stackoverflow from "../../../public/stack-oweflow.png"
+
 const Navbar = () => {
     return (
         <div className='navbar'>
@@ -16,19 +21,19 @@ const Navbar = () => {
 
                 <div className='social'>
                     <a href="https://github.com/dulmik2003" target="_blank">
-                        <img src="./github.png" alt="" />
+                        <img src={github} alt="" />
                     </a>
 
                     <a href="https://www.linkedin.com/in/dulmika-semal-19955a2b3/" target="_blank">
-                        <img src="./linkedIn.png" alt="" />
+                        <img src={linkedin} alt="" />
                     </a>
 
                     <a href="https://www.hackerrank.com/profile/semaldulmika" target="_blank">
-                        <img src="./hackerrank.png" alt="" />
+                        <img src={hackerrank} alt="" />
                     </a>
 
                     <a href="https://stackoverflow.com/users/22796206/dulmika-semal?tab=profile" target="_blank">
-                        <img src="./stack-oweflow.png" alt="" />
+                        <img src={stackoverflow} alt="" />
                     </a>
                 </div>
             </div>

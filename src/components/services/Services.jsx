@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import './services.scss'
 import { motion, useInView } from "framer-motion";
 
+import peopleImg from "../../../public/people.webp"
+
 const variants = {
     initial: {
         x: -500,
@@ -51,7 +53,7 @@ const Services = () => {
 
             <motion.div className="titleContainer" variants={variants}>
                 <div className="title">
-                    <motion.img variants={imageVariants} initial="initial" animate="animate" src="/people.webp" alt="" />
+                    <motion.img variants={imageVariants} initial="initial" animate="animate" src={peopleImg} alt="" />
                     <h1> <b>Efficient</b> Software </h1>
                 </div>
 

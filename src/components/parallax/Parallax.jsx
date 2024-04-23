@@ -2,6 +2,11 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import './parallax.scss'
 import { useRef } from 'react';
 
+import mountainsImg from "../../../public/mountains.png";
+import starsImg from "../../../public/stars.png";
+import planetsImg from "../../../public/planets.png";
+import sunImg from "../../../public/sun.png";
+
 const Parallax = ({ type }) => {
     const ref = useRef();
 
@@ -25,18 +30,26 @@ const Parallax = ({ type }) => {
                 {type === "Services" ? "What I Do?" : "What I Did?"}
             </motion.h1>
 
-            <motion.div className="mountains"></motion.div>
+            <motion.div className="mountains" style={{ backgroundImage: `url(${mountainsImg})` }}>
+            </motion.div>
 
             <motion.div style={{
                 y: yBg,
                 backgroundImage:
                     type === "Services"
-                        ? "url('planets.png')"
-                        : "url('sun.png')"
+                        ? `url(${planetsImg})`
+                        : `url(${sunImg})`
             }} className="planets">
             </motion.div>
 
-            <motion.div className="stars" style={{ x: xBg }}></motion.div>
+            <motion.div className="stars" style={{
+                x: xBg,
+                backgroundImage:
+                    type === "Services"
+                        ? `url(${starsImg})`
+                        : 'none'
+            }}>
+            </motion.div>
         </div >
     )
 };
