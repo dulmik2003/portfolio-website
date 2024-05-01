@@ -68,7 +68,7 @@ const Hero = () => {
                             </motion.button>
                         </a>
 
-                        <a href="">
+                        <a href="#Contact">
                             <motion.button id='btn-right' whileTap={{ scale: 0.95 }}>
                                 Contact Me
                             </motion.button>

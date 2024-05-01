@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { useState } from "react";
 
 // const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
-const items = ["Homepage", "Services", "Portfolio"];
+const items = ["Homepage", "Services", "Portfolio", "Contact"];
 
 const variants = {
     open: {
