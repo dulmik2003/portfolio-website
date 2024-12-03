@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-  pull:
+  pull_request:
     branches:
-      - main  # Trigger deployment on pushes to the develop branch
+      - main  # Trigger deployment on do a pull request to the main branch
 
 jobs:
   build:
