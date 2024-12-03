@@ -1,0 +1,105 @@
+.services {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .textContainer {
+        // border: 1px solid red;
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            // color: gray;
+            color: orange;
+            text-align: right;
+        }
+
+        hr {
+            width: 300px;
+            border: none;
+            // border-top: 0.5px solid gray;
+            border-top: 0.5px solid orange;
+        }
+    }
+
+    .titleContainer {
+        // border: 1px solid red;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 15px;
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            img {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-size: 96px;
+                font-weight: 100;
+
+                b {
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+
+            button {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .cardsContainer {
+        flex: 2;
+        display: flex;
+        max-width: 1366px;
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 20px;
+
+        .card {
+            width: 25%;
+            padding: 35px;
+            // border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            // glass card design
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.9px);
+            -webkit-backdrop-filter: blur(6.9px);
+
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}
