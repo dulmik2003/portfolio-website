@@ -24,15 +24,18 @@ const Contact = () => {
 
                 <motion.div className="item" variants={variants}>
                     <h2>Mail</h2>
-                    <span>semaldulmika@gmail.com</span>
+                    <span>example@gmail.com</span>
+                    {/* <span>semaldulmika@gmail.com</span> */}
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                     <h2>Address</h2>
-                    <span>Beliatta, Southern province, Srilanka</span>
+                    <span>example adress</span>
+                    {/* <span>Beliatta, Southern province, Srilanka</span> */}
                 </motion.div>
                 <motion.div className="item" variants={variants}>
                     <h2>Phone</h2>
-                    <span>+94 284 5853</span>
+                    <span>example phone number</span>
+                    {/* <span>+94 284 5853</span> */}
                 </motion.div>
             </motion.div>
 

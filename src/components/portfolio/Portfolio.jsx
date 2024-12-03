@@ -17,16 +17,16 @@ const items = [
     },
     {
         id: 3,
-        title: "Medical App",
-        img: "8K/girl-2.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime odit, similique laborum amet quibusdam neque error ducimus reprehenderit ad saepe inventore corporis, dolore fugiat et. Tenetur quo maxime minus!"
+        title: "Book Social Network",
+        img: "projects/book-social-network.png",
+        desc: "This web application enables users to manage their book collections and engage with a community of book enthusiasts. It offers features such as user registration, secure email validation, book management (including creation, updating, sharing and archiving), book borrowing with checks for availability, book return functionality, and approval of book returns."
     },
-    {
-        id: 4,
-        title: "Music player",
-        img: "8K/deathstroke.jpg",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime odit, similique laborum amet quibusdam neque error ducimus reprehenderit ad saepe inventore corporis, dolore fugiat et. Tenetur quo maxime minus!"
-    }
+    // {
+    //     id: 4,
+    //     title: "Music player",
+    //     img: "8K/deathstroke.jpg",
+    //     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maxime odit, similique laborum amet quibusdam neque error ducimus reprehenderit ad saepe inventore corporis, dolore fugiat et. Tenetur quo maxime minus!"
+    // }
 ];
 
 const Single = ({ item }) => {
